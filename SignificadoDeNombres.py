@@ -12,8 +12,10 @@ import os
 br = mechanize.Browser()
 
 # Opciones para el navegador
+# Ingnora robots.txt
 br.set_handle_robots(False)
 br.set_handle_equiv(False)
+# Simula ser una persona
 br.addheaders = [('User-agent', 'Mozilla/5.0')] 
 
 # Opcion para terminar el bucle
